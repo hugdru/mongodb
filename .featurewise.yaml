@@ -20,7 +20,7 @@ domains:
       Durable Writes: supported
       Quorum Reads and Writes: not supported
       Number of Replicas to Read: not supported
-      Number of Replicas to Write: in the client
+      Number of Replicas to Write: specified in the client
       Writes with Unavailable Replicas: no rollback - write returns replication error
       Read from Master Only: specified in the client
       Resolving Write Conflicts: not applicable - master-slave
@@ -77,7 +77,7 @@ domains:
       Security Role Options: [multiple roles per user, default roles, custom roles]
       Scope of Roles: [cluster, database, collection]
       Database Encryption: not supported
-      Logging: configurable event logging
+      Logging: [configurable event logging]
     Admin:
       Configuration Files: single
       Node command line access: non-authenticated

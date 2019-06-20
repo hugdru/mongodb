@@ -8,7 +8,7 @@ domains:
     url: https://github.com/hugdru/schemas/blob/master/big_data-schema.yaml
   data:
     Scalability:
-      Scalable Distribution Architecture: horizontal partitioning of database, horizontal partitioning and replication
+      Scalable Distribution Architecture: [horizontal partitioning of database, horizontal partitioning and replication]
       Scaling Out - Adding Data Storage Capacity: automatic data rebalancing
       Request Load Balancing: fixed connections to a request coordinator
       Granularity of Write Locks: locks on whole database
@@ -21,24 +21,24 @@ domains:
       Quorum Reads and Writes: not supported
       Number of Replicas to Read: not supported
       Number of Replicas to Write: in the client
-      Writes with Unavailable Replicas: "no rollback: write returns replication error"
-      Read from Master Only: in the client
-      Resolving Write Conflicts: "not applicable: master-slave"
+      Writes with Unavailable Replicas: no rollback - write returns replication error
+      Read from Master Only: specified in the client
+      Resolving Write Conflicts: not applicable - master-slave
     Query Language:
       API-based: supported
-      Declarative Query Language: not suppported
-      REST/HTTP-based Queries: not suppported
+      Declarative Query Language: not supported
+      REST/HTTP-based Queries: not supported
       Languages Supported: [Java, C#, Python, C/C++, Perl, PHP, Ruby, Scala, Javascript]
       Cursor-based Queries: supported
-      JOIN-style queries: not suppported
-      Complex Data Types: arrays
+      JOIN-style queries: not supported
+      Complex Data Types: [arrays]
       Restrict Query Result Set Size: supported
       Key Matching Options: [exact, partial match, regular expressions]
       Sort Options: [ascending, descending]
-      Triggers: not supported
+      Triggers: [not supported]
       Data Object Expiry: supported
     Data Model:
-      Data model: Document
+      Data Model: Document
       Fixed Schema: not required
       Opaque Data Objects: not required
       Hierarchical Data Objects: supported
@@ -54,8 +54,8 @@ domains:
       Replication Architecture: master-slave
       Replication for Backup: supported
       Replication across Data Centers: supported by standard data replication mechanisms
-      Replica Writes: to master replica only, to multiple replicas, to specified replica (configurable)
-      Replica Reads: from master replica only, from any replica, from specified replica (configurable)
+      Replica Writes: [to master replica only, to multiple replicas, to specified replica (configurable)]
+      Replica Reads: [from master replica only, from any replica, from specified replica (configurable)]
       Read Repair: not relevant
       Automatic Replica Failure Detection: supported
       Automatic Failover: supported
@@ -67,11 +67,11 @@ domains:
       Automatic Data Rebalancing: [new storage triggered, administrative rebalancing tools, data growth triggered]
       Physical Data Distribution: [single cluster, multiple data centers]
       Query Architecture: distributed coordinator for shard key lookup
-      Queries using Non-Shard Key Value: non-indexed (scan)
+      Queries using Non-Shard Key Value: [non-indexed (scan)]
       Merging Query Results from Multiple Shards: [sorted order, paged from server]
     Security:
       Client Authentication: [custom user/password, X509]
-      Server authentication: shared keyfile
+      Server Authentication: [shared keyfile]
       Credential Store: in database
       Role Based Security: supported
       Security Role Options: [multiple roles per user, default roles, custom roles]
@@ -81,8 +81,8 @@ domains:
     Admin:
       Configuration Files: single
       Node command line access: non-authenticated
-      Node addition/removal: centralized tool
-      Cluster monitoring: snapshot
+      Node addition/removal: [centralized tool]
+      Cluster monitoring: [snapshot]
       Dump database configuration: supported
       Database object count: supported
       Physical storage usage: supported

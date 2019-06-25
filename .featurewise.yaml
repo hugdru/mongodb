@@ -11,7 +11,7 @@ domains:
       Scalable Distribution Architecture: [horizontal partitioning of database, horizontal partitioning and replication]
       Scaling Out - Adding Data Storage Capacity: automatic data rebalancing
       Request Load Balancing: fixed connections to a request coordinator
-      Granularity of Write Locks: locks on whole database
+      Granularity of Write Locks: [locks on whole database, locks on tables/collections]
       Scalable Request Processing Architecture: centralized coordinator, but can be replicated
     Consistency:
       Object Level Atomic Updates: supported
